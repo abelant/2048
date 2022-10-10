@@ -5,7 +5,7 @@ import type { CellPosition } from '../play'
 import { useLocalStorage, uuid } from '../utils'
 import Heading from './Heading.vue'
 
-const size = ref(4)
+const size = ref(6)
 const { cells, score, isEnd, move, undo, init, start } = useGrid(size.value)
 const { setItem, getItem } = useLocalStorage()
 const storageKey = computed(() => `size${size.value}_best`)

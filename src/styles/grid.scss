@@ -4,7 +4,6 @@
   }
 }
 @function exponent($base, $exponent) {
-  // reset value
   $value: $base;
   // positive intergers get multiplied
   @if $exponent > 1 {
